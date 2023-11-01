@@ -23,7 +23,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("tiny"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors());
 
 
 /* ROUTES */
